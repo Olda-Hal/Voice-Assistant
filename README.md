@@ -28,25 +28,19 @@ To get started with the Smart Home Voice AI Assistant, follow these steps:
    cd smart-home-voice-assistant
    ```
 
-3. **Create a Virtual Environment (Recommended):**
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-4. **Install Dependencies:**
+3. **Install Dependencies:**
    ```bash
    pip install -r requirements.txt
    ```
 
-5. **Configure API Keys and Settings:**
+4. **Configure API Keys and Settings:**
    - Rename `example_locales.env` to `locales.env`.
    - Open `config.yaml` and fill in the required API keys and settings for your smart home.
 
-6. **Run the Application:**
+5. **Run the Application:**
    ```bash
    python main.py
    ```
 
-7. **Start Giving Commands:**
+6. **Start Giving Commands:**
    Once the application is running, you can start issuing voice commands to interact with your smart home devices.
