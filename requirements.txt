@@ -1,0 +1,4 @@
+openai
+sounddevice
+vosk
+pyttsx3
