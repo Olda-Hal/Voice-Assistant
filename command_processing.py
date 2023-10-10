@@ -25,22 +25,21 @@ class Actions(enum.Enum):
     TURNOFF = 4
     CHANGE = 5
 
-def open_action():
-    print("Opening something")
+def open_action(command):
+    print(f"Opening {command[0]}")
 
-def close_action():
-    print("Closing something")
+def close_action(command):
+    print("Closing {command[0]}")
 
-def turn_on_action():
-    print("Turning something on")
+def turn_on_action(command):
+    print("Turning {command[0]} on")
 
-def turn_off_action():
-    print("Turning something off")
+def turn_off_action(command):
+    print("Turning {command[0]} off")
 
-def change_action():
-    print("Changing something")
+def change_action(command):
+    print("Changing {command[0]}")
 
-# Dispatch tabulka pro spojení akcí a funkcí
 action_dispatch = {
     Actions.OPEN: open_action,
     Actions.CLOSE: close_action,
@@ -50,9 +49,5 @@ action_dispatch = {
 }
 
 
-# Příklad použití
 command = ["OPEN", "door"]
-parser(command)
-
-command = ["TURNON", "light", "switch"]
 parser(command)
